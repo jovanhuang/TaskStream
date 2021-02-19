@@ -60,10 +60,8 @@ public class Main {
     }
 
     public static void printDeadlines(ArrayList<Task> tasksData) {
-        ArrayList<Task> dlList = new ArrayList<>();
         for (Task t : tasksData) {
             if (t instanceof Deadline) {
-                dlList.add(t);
                 System.out.println(t);
             }
         }
